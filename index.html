@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!--MENU SUPERIOR-->
+    <div id="menuSuperior">
+
+        <a href="https://www.escoladnc.com.br/">
+            <img id="logo" 
+                src="/Projeto01/imagens/logo.svg" 
+                alt="ERRO!"
+            >
+        </a>
+
+        <h1 id="tituo-menuSuperior">
+            Dê os priomeiros passo da <br>
+            sua carreira em Tecnologia
+        </h1>
+        
+        <p id="texto-menuSuperior">
+            Inscreva-se no curso gratuito de I nstruição à <br>
+            Tecnologia da DNC School a apenda os principais <br>
+            fundamentos para construir experiências efetivas.
+        </p>
+        
+    </div>
+
+    <!--MENU DE INFORMAÇÕES-->
+    <div id="menuInformacional">
+        <p class="textoInformativo">
+            <img id="certificado"
+                src="icones/certificado.svg" 
+                class="icone" 
+                alt=""
+            >
+            Certificado de concluão
+        </p>
+
+        <p class="textoInformativo">
+            <img id="relogio"
+                src="icones/relogio.svg" 
+                class="icone" 
+                alt=""
+            >
+            4 horas de conteúdo
+        </p>
+
+        <p class="textoInformativo">
+            <img id="camera" 
+                src="icones/camera.svg" 
+                class="icone" 
+                alt=""
+            >
+            Aulas online gravadas
+        </p>
+    </div>
+
+    <!--SESSÃO DE VIDEO-->
+    <div id="secaovideo">
+
+        <iframe id="video" 
+            width="502" 
+            height="283" 
+            src="https://www.youtube.com/embed/0n7-Xh1t0Jg" 
+            title="MELHORE 10x no EXCEL com CHATGPT 🚀" 
+            frameborder="0" 
+            allow="accelerometer; 
+                autoplay; 
+                clipboard-write; 
+                encrypted-media; 
+                gyroscope; 
+                picture-in-picture; 
+                web-share" 
+            allowfullscreen
+            ></iframe>
+        
+        <div>
+            <h1 id="tituloVideo">
+                Aprenda com especialista e <br>
+                comece seu primeiro projeto
+            </h1><br><br>
+    
+            <p id="textoVideo">
+                Conheça o processo de desenvolvimento e entenda como ultilizar <br>
+                os principais métodos e ferramentas da área para desenvolver <br>
+                problemas complexos. <br><br>
+    
+                Conquisrte seu  certificado e desenvolva um projeto prátrico para aplicar seus conhecimentos.
+            </p>
+        </div>
+        
+    </div>
+
+    <!--CARROCEL DE CARDS-->
+    <div id="carrocel">
+        <h1 id="tituloCarrocel">
+            Mais de 500 alunos já incluiramseus estudos
+        </h1>
+
+        <div id="cards">
+            <img id="setaEsquerda"
+                onclick="rolarEsqerda()"
+                class="setas"
+                src="./icones/setaEsquerda.svg" 
+                alt="ERRO"
+            >
+
+            <img id="leonardo" 
+                class="card"
+                src="./cards/Leonardo.svg" 
+                alt="ERRO"
+            >
+
+            <img id="bruna" 
+                class="card"
+                src="./cards/Bruna.svg" 
+                alt="ERRO"
+            >
+
+            <img id="samantha" 
+                class="card"
+                src="./cards/Samantha.svg" 
+                alt="ERRO"
+            >
+
+            <img id="setaDireita"
+                onclick="rolarDireita()"
+                class="setas"
+                src="./icones/setaDireita.svg" 
+                alt="ERRO"
+            >
+
+        </div>
+        
+    </div>
+
+    <!--FORMULARIO-->
+    <div id="formulario">
+        <h1 id="tituloFormulario">
+            Comece agora mesmo e dê o próximo passo da sua carreira
+        </h1>
+
+        <form action="https://api.sheetmonkey.io/form/VYNYUDGnEdXeRvLr7S7rZ" method="post">
+            <input name="Name" required
+                type="text"
+                placeholder="Nome"
+            ><br>
+
+            <input name="Email" required
+                type="email"
+                placeholder="Email"
+            ><br>
+
+            <input name="Phone"
+                type="number"
+                placeholder="Telefone"
+            ><br>
+
+            <input 
+                type="hidden" 
+                name="Created" 
+                value="x-sheetmonkey-current-date-time" 
+            />
+
+            <button id="botaoEnviar"
+                type="submit"
+            >Acesse a ementa grátis</button>
+
+        </form>
+
+    </div>
+
+    <script src="funcoes.js"></script>
+</body>
+</html>
