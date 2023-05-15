@@ -12,9 +12,9 @@ function rolarDireita() {
 }
 
 function rolarEsqerda(){
-    setaDireita.style = "display:flex"
-    setaEsquerda.style = "display:none"
     Samantha.style = "display: none"
     Leonardo.style = "display: flex"
-    Bruna.style = "display: nome"
+    /*Bruna.style = "display: nome"*/
+    setaDireita.style = "display:flex"
+    setaEsquerda.style = "display:none"
 }
